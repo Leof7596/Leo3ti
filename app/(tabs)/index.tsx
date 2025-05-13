@@ -18,13 +18,13 @@ export default function Index() {
     if (!result.canceled) {
       setSelectedImage(result.assets[0].uri);
     } else {
-      alert('Você não selecionou nehuma imagem.');
+      alert('Você não selecionou nenhuma imagem.');
     }
   };
 
   return (
     <View style={styles.container}>
-      <View style={styles.imageContainer}>
+      <View style={styles.imageContainer}>      
       <ImageViewer imgSource={PlaceholderImage} selectedImage={selectedImage} />
       </View>
       <View style={styles.footerContainer}>
