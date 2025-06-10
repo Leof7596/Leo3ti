@@ -1,9 +1,9 @@
 import React from 'react';
 import Ionicons from "@expo/vector-icons/Ionicons";
 import { View, Text, TextInput, Button, FlatList, TouchableOpacity, StyleSheet } from 'react-native';
-import { useTarefas } from '../hooks/useTarefas';
+import { useTarefas } from '@/hooks/useTarefas';
 
-export default function App() {
+export default function ToDoList() {
     const { tarefas, novaTarefa, setNovaTarefa, adicionarTarefa, removerTarefa } = useTarefas();
 
     return (

@@ -23,7 +23,7 @@ export default function tabLayout() {
                 options={{
                     title: "Página inicial",
                     tabBarIcon: ({ color, focused }) => (
-                        <Ionicons name={focused ? 'information' : 'information'} color={color} size={24} />
+                        <Ionicons name={focused ? 'grid-sharp' : 'grid-sharp'} color={color} size={24} />
                     ),
                 }}
             />
@@ -32,12 +32,21 @@ export default function tabLayout() {
                 options={{
                     title: 'Sobre',
                     tabBarIcon: ({ color, focused }) => (
-                        <Ionicons name={focused ? 'log-out-outline' : 'log-out-outline'} color={color} size={24} />
+                        <Ionicons name={focused ? 'information' : 'information'} color={color} size={24} />
                     ),
                 }}
             />
             <Tabs.Screen
-                name="ToDoList"
+                name="buscaCep"
+                options={{
+                    title: 'CEP',
+                    tabBarIcon: ({ color, focused }) => (
+                        <Ionicons name={focused ? 'location' : 'location'} color={color} size={24} />
+                    ),
+                }}
+            />
+            <Tabs.Screen
+                name="toDoList"
                 options={{
                     title: 'Lista',
                     tabBarIcon: ({ color, focused }) => (
