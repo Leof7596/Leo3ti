@@ -38,7 +38,6 @@ const onSaveImageAsync = async () => {
 
 };
 
-
   return (
     <View style={styles.container}>
       <View style={styles.imageContainer}>      
