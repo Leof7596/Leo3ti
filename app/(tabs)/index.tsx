@@ -17,7 +17,7 @@ import domtoimage from 'dom-to-image';
 const PlaceholderImage = require('@/assets/images/oi.png');
 
 export default function Index() {
-  const imageRef = useRef<View>(null);
+  const imageRef = useRef<any>(null);
   const [status, requestPermission] = MediaLibrary.usePermissions();
     const [selectedImage, setSelectedImage] = useState<string | undefined>(undefined);
     const [showAppOptions, setShowAppOptions] = useState<boolean>(false);
@@ -90,18 +90,18 @@ const onSaveImageAsync = async () => {
 
   return (
     <GestureHandlerRootView style={styles.container}>
-      <View style={styles.imageContainer}>      
+      <View style={styles.imageContainer}>   
+     <View ref={imageRef} collapsable={false}>
       <ImageViewer imgSource={PlaceholderImage} selectedImage={selectedImage}/>
       {pickedEmoji && <EmojiSticker imageSize={40} stickerSource={pickedEmoji} />}
       </View>
+      </View>
       {showAppOptions ? (
   <View style={styles.optionsContainer}>
-     <View ref={imageRef} collapsable={false}>
     <View style={styles.optionsRow}>
       <IconButton icon="refresh" label="Recarregar" onPress={onReset} />
       <CircleButton onPress={onAddSticker} />
       <IconButton icon="save-alt" label="Salvar" onPress={onSaveImageAsync} />
-      </View>
     </View>
   </View>
     ) : (

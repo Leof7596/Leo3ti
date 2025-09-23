@@ -8,8 +8,7 @@ LogBox.ignoreAllLogs (true);
 export default function RootLayout() {
   return (
     <>
-    <StatusBar style = 'light'/>
-    <Stack
+-    <Stack
     screenOptions={{
       headerStyle: {
           backgroundColor: '#25292e',
