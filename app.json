@@ -4,7 +4,7 @@
     "slug": "my-app",
     "version": "1.0.0",
     "orientation": "portrait",
-    "icon": "./assets/images/000.ico",
+    "icon": "./assets/images/000.jpg",
     "scheme": "myapp",
     "userInterfaceStyle": "automatic",
     "newArchEnabled": true,
@@ -13,7 +13,7 @@
     },
     "android": {
       "adaptiveIcon": {
-        "foregroundImage": "./assets/images/000.ico",
+        "foregroundImage": "./assets/images/000.jpg",
         "backgroundColor": "#ffffff"
       },
       "package": "com.leof7596.myapp"
@@ -21,14 +21,14 @@
     "web": {
       "bundler": "metro",
       "output": "static",
-      "favicon": "./assets/images/000.ico"
+      "favicon": "./assets/images/000.jpg"
     },
     "plugins": [
       "expo-router",
       [
         "expo-splash-screen",
         {
-          "image": "./assets/images/000.ico",
+          "image": "./assets/images/000.jpg",
           "imageWidth": 200,
           "resizeMode": "contain",
           "backgroundColor": "#ffffff"
@@ -47,9 +47,7 @@
         "projectId": "eadf7644-e7b3-4ab8-8055-9740e45a52c7"
       }
     },
-    "runtimeVersion": {
-      "policy": "appVersion"
-    },
+    "runtimeVersion": "1.0.0",
     "updates": {
       "url": "https://u.expo.dev/eadf7644-e7b3-4ab8-8055-9740e45a52c7"
     }

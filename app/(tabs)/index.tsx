@@ -57,7 +57,6 @@ export default function Index() {
 
 const onSaveImageAsync = async () => {
   if (Platform.OS !== 'web') {
-  const onSaveImageAsync = async () => {
   try {
     const localUri = await captureRef(imageRef, {
       height: 440,
@@ -71,7 +70,7 @@ const onSaveImageAsync = async () => {
   } catch (e) {
     console.log(e);
   }
-}  } else {
+ } else {
     try {
       const dataUrl = await domtoimage.toJpeg(imageRef.current, {
         quality: 0.95,
