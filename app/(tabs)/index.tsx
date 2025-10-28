@@ -14,7 +14,7 @@ import {useRef} from 'react';
 import {captureRef} from 'react-native-view-shot';
 import domtoimage from 'dom-to-image';
 
-const PlaceholderImage = require('@/assets/images/oi.png');
+const PlaceholderImage = require('@/assets/images/oi.jpg');
 
 export default function Index() {
   const imageRef = useRef<any>(null);
@@ -121,7 +121,7 @@ const onSaveImageAsync = async () => {
 const styles= StyleSheet.create({
   container: {
     flex: 1,
-    backgroundColor: '#000000',
+    backgroundColor: '#37ddfa',
     justifyContent: "center",
     alignItems: "center",
   },

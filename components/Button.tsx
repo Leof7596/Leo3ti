@@ -13,13 +13,13 @@ export default function Button({ label, theme, onPress}: Props) {
       <View
         style={[
           styles.buttonContainer,
-          { borderWidth: 4, borderColor: 'rgb(255, 8, 0)', borderRadius: 18 },
+          { borderWidth: 4, borderColor: 'white', borderRadius: 18 },
         ]}>
         <Pressable
-          style={[styles.button, { backgroundColor: '#000000' }]} onPress={onPress}>
+          style={[styles.button, { backgroundColor: 'white' }]} onPress={onPress}>
 
-          <FontAwesome name="picture-o" size={18} color="'rgb(255, 8, 0)'" style={styles.buttonIcon} />
-          <Text style={[styles.buttonLabel, { color: 'rgb(255, 8, 0)' }]}>{label}</Text>
+          <FontAwesome name="picture-o" size={18} color="'black'" style={styles.buttonIcon} />
+          <Text style={[styles.buttonLabel, { color: 'black' }]}>{label}</Text>
         </Pressable>
       </View>
     );
@@ -55,7 +55,7 @@ const styles = StyleSheet.create({
     paddingRight: 8,
   },
   buttonLabel: {
-    color: 'rgb(255, 8, 0)',
+    color: 'black',
     fontSize: 16,
   },
 });

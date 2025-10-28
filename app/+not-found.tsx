@@ -7,7 +7,7 @@ export default function NotFoundScreen() {
       <Stack.Screen
         options={{
           title: 'Ops! Página não encontrada',
-          headerStyle: { backgroundColor: '#000000' },
+          headerStyle: { backgroundColor: '#37ddfa' },
           headerTintColor: 'red',
         }}
       />
@@ -23,7 +23,7 @@ export default function NotFoundScreen() {
 const styles = StyleSheet.create({
   container: {
     flex: 1,
-    backgroundColor: '#000000',
+    backgroundColor: '#37ddfa',
     justifyContent: "center",
     alignItems: "center",
   },

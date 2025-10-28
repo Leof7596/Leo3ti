@@ -8,7 +8,7 @@ export default function ToDoList() {
 
     return (
         <View style={styles.container}>
-            <Text style={styles.titulo}>Lista de jogadores preferidos</Text>
+            <Text style={styles.titulo}>Lista de cidades preferidas</Text>
             <View style={styles.inputContainer}>
                 <TextInput
                     style={styles.input}
@@ -30,7 +30,7 @@ export default function ToDoList() {
                         <Text style={styles.tarefaTexto}>{item.texto}</Text>
                         <TouchableOpacity onPress={() => removerTarefa(item.id)}>
                             <Text style={styles.remover}>                
-                                <Ionicons name={ 'football'} color={'white'} size={24} />
+                                <Ionicons name={ 'football'} color={'black'} size={24} />
                             </Text>
                         </TouchableOpacity>
                     </View>
@@ -41,10 +41,10 @@ export default function ToDoList() {
 }
 
 const styles = StyleSheet.create({
-    container: { flex: 1, padding: 20, backgroundColor: 'rgb(0, 0, 0)', color: 'white' },
-    titulo: { fontSize: 24, fontWeight: 'bold', textAlign: 'center', marginBottom: 20, color: 'white' },
+    container: { flex: 1, padding: 20, backgroundColor: '#37ddfa', color: 'black' },
+    titulo: { fontSize: 24, fontWeight: 'bold', textAlign: 'center', marginBottom: 20, color: 'black' },
     inputContainer: { flexDirection: 'row', marginBottom: 10 },
-    input: { flex: 1, borderWidth: 1, borderColor: 'white', padding: 10, borderRadius: 5, marginRight: 10, color: 'white' },
+    input: { flex: 1, borderWidth: 1, borderColor: 'black', padding: 10, borderRadius: 5, marginRight: 10, color: 'black' },
     
     botao: {
         backgroundColor: 'white',
@@ -55,7 +55,7 @@ const styles = StyleSheet.create({
         minWidth: 100,
     },
     textoBotao:{
-        color: '#FF0000',
+        color: 'black',
         fontSize: 16,
         fontWeight: 'bold'
     },
@@ -63,12 +63,12 @@ const styles = StyleSheet.create({
     tarefaContainer: {
         flexDirection: 'row', 
         justifyContent: 'space-between', 
-        backgroundColor: 'rgb(255, 8, 0)', 
-        color: 'white', 
+        backgroundColor: 'white', 
+        color: 'black', 
         padding: 15,
         marginBottom: 5, 
         borderRadius: 5, 
-        shadowColor: '#000', 
+        shadowColor: '#37ddfa', 
         shadowOpacity: 0.1, 
         shadowRadius: 2, 
         elevation: 2

@@ -6,15 +6,15 @@ export default function tabLayout() {
     return (
         <Tabs
             screenOptions={{
-                tabBarActiveTintColor: '#FF0000',
-                tabBarInactiveTintColor: 'red',
+                tabBarActiveTintColor: '#black',
+                tabBarInactiveTintColor: 'black',
                 headerStyle: {
-                    backgroundColor: '#000000',
+                    backgroundColor: '#white',
                 },
                 headerShadowVisible: false,
-                headerTintColor: '#FF0000',
+                headerTintColor: 'black',
                 tabBarStyle: {
-                    backgroundColor: '#000000',
+                    backgroundColor: 'white',
                 }
             }}
         >

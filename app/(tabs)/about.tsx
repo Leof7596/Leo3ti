@@ -4,11 +4,12 @@ export default function AboutScreen() {
   return (
     <View style={styles.container}>
       <Text style={styles.text}>
-        O Corinthians é o maior clube do Brasil, fundado em 1910 em São Paulo.
-        Conhecido como “Timão”, tem uma torcida apaixonada e uma história
-        marcada por conquistas, como a Libertadores e o Mundial em 2012, além
-        de vários campeonatos Brasileiros e Paulistas. O clube representa o
-        povo, a luta e a paixão. Ser corinthiano é viver o futebol com o coração.
+        O Rio de Janeiro é uma das cidades mais icônicas do Brasil, conhecida mundialmente 
+        por suas praias deslumbrantes, seu povo acolhedor e sua energia contagiante. 
+        Fundada em 1565, a cidade é um verdadeiro cartão-postal, com o Cristo Redentor 
+        abençoando a paisagem e o Pão de Açúcar emoldurando o mar. O Rio é samba, é carnaval, 
+        é alegria. Um lugar onde a natureza e a cultura se encontram em perfeita harmonia. 
+        Viver o Rio é sentir o coração do Brasil pulsar em cada esquina.
       </Text>
     </View>
   );
@@ -17,13 +18,13 @@ export default function AboutScreen() {
 const styles = StyleSheet.create({
   container: {
     flex: 1,
-    backgroundColor: '#000000',
+    backgroundColor: '#37ddfa',
     justifyContent: "center",
     alignItems: "center",
     padding: 30, // Espaçamento nas bordas
   },
   text: {
-    color: '#FFFFFF',
+    color: 'black',
     fontSize: 35,
     textAlign: 'justify',
   },

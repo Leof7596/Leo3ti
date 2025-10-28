@@ -13,7 +13,7 @@ export default function BuscaCEP() {
         value={cep}
         onChangeText={setCep}
         placeholder="Digite o CEP"
-        placeholderTextColor="#aaa"
+        placeholderTextColor="black"
         keyboardType="numeric"
       />
 
@@ -36,13 +36,13 @@ export default function BuscaCEP() {
 const styles = StyleSheet.create({
   container: {
     flex: 1,
-    backgroundColor: '#000000',
+    backgroundColor: '#37ddfa',
     alignItems: 'center',
     justifyContent: 'center',
     padding: 16,
   },
   text: {
-    color: '#ffffff',
+    color: 'black',
     fontSize: 21,
     fontFamily: 'Arial',
   },
@@ -52,19 +52,19 @@ const styles = StyleSheet.create({
     borderColor: 'gray',
     padding: 8,
     marginVertical: 10,
-    color: '#ffffff',
+    color: 'black',
     fontSize: 21,
     fontFamily: 'Arial',
   },
   button: {
-    backgroundColor: '#FFFFFF', // Fundo branco
+    backgroundColor: 'white', // Fundo branco
     paddingVertical: 12,
     paddingHorizontal: 32,
     borderRadius: 8,
     marginTop: 10,
   },
   buttonText: {
-    color: 'red', // Texto vermelho
+    color: 'black', // Texto preto
     fontSize: 21,
     fontFamily: 'Arial',
     textAlign: 'center',
